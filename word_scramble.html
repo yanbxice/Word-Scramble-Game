@@ -1,0 +1,22 @@
+<!DOCTYPE HTML>
+<html ng-app='WordScrambleApp'>
+    <head>
+        <title>Word Scramble Game</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.1/angular.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.10/angular-route.min.js"></script>
+        <script src="main.js"></script>
+        <script src="word_service.js"></script>
+    </head>
+
+    <body ng-controller='wordCtrl'>
+        <div id='input'>
+            <input autofocus type="text" placeholder="input the correct word" ng-model='input.text' ng-keydown='checkWord($event)'></input>
+        </div>
+        <div id='scramble' class='text'>{{scrambled}}</div>
+        <div id='my-input' class='text' ng-class="{'correct': isCorrect == 1, 'wrong': isCorrect == -1}">{{input.text}}</div>
+        <div id='point'>{{points}} points</div>
+        <div style="font-size: 5px; position: fixed; left: 0; bottom: 0;">{{word}}
+    </body>
+<html>

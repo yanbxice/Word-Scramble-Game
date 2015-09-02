@@ -1,0 +1,54 @@
+@import url(https://fonts.googleapis.com/css?family=Indie+Flower);
+
+body {
+    background-color: lightblue;
+    font-size: 10px;
+}
+
+.text {
+    font: 8em 'Indie Flower' helvetica;
+    color: rgb(131,175,155);
+    text-align: center;
+    letter-spacing: 20px;
+    width: 50%;
+    height: 100px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#scramble {
+    font-family: helvetica;
+    margin-top: 100px;
+    background-color: rgb(255,245,215);
+    border-radius: 10px;
+}
+
+#input {
+    position: relative;
+}
+
+input {
+    position: absolute;
+    margin-top: -130px;
+}
+
+#my-input {
+    margin-top: 50px;
+}
+
+.correct {
+    color: rgba(154,205,50,1);
+}
+
+.wrong {
+    color: rgba(254,67,101,1);
+}
+
+#point {
+    font-size: 4em;
+    color: white;
+    letter-spacing: normal;
+    margin-top: 30px;
+    float: right;
+    margin-right: 60px;
+}
